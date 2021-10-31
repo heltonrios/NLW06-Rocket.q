@@ -15,24 +15,23 @@
 
     <link rel="stylesheet" href="styles/room.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
   </head>
   <body>
     <div id="room" class="content">
-
       <header>
         <a href="home.html">
           <img src="assets/logo.png" alt="Rocket.Q logo" />
-
         </a>
         <div class="buttons">
           <div class="button outlined">
             #323243
-            <img src="assets/copy.png" alt="número da sala"> 
+            <img src="assets/copy.png" alt="número da sala" />
           </div>
 
           <div class="button">
             <a href="#" class="button">
-              <img src="assets/users-white.png" alt="criar sala">
+              <img src="assets/users-white.png" alt="criar sala" />
               Criar sala
             </a>
           </div>
@@ -46,53 +45,138 @@
             <label class="sr-only" for-id="question">
               O que você quer perguntar?
             </label>
-            <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+            <textarea
+              name="question"
+              id="question"
+              placeholder="O que você quer perguntar?"
+            ></textarea>
 
             <footer>
               <div>
-                <img src="assets/lock.png" alt="cadeado">
+                <img src="assets/lock.png" alt="cadeado" />
                 Esta pergunta é anônima
               </div>
               <button>Enviar</button>
             </footer>
-
           </form>
-
         </section>
 
         <section id="questions">
-          <h2 class="sr-only">
-            Perguntas da comunidade
-          </h2>
+          <h2 class="sr-only">Perguntas da comunidade</h2>
 
           <div class="questions">
-
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
-                  <img src="assets/Avatar.png" alt="avatar">
+                  <img src="assets/user.png" alt="user" />
                 </div>
                 <div class="question">
-                  <p>Qual a diferença entre const, var e let no Javascript</p>
+                  <p>Qual a diferença entre const, var e let no Javascript?</p>
                 </div>
               </div>
               <div class="actions">
                 <a class="check" href="#">
-                  <img src="assets/check.png" alt="marcar como lida">
+                  <img src="assets/check.png" alt="marcar como lida" />
                   Marcar como lida
                 </a>
                 <a class="trash" href="#">
-                  <img src="assets/trash.png" alt="excluir">
+                  <img src="assets/trash.png" alt="excluir" />
                   Excluir
                 </a>
               </div>
             </div>
 
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.png" alt="user" />
+                </div>
+                <div class="question">
+                  <p>O que é Typescript?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="check" href="#">
+                  <img src="assets/check.png" alt="marcar como lida" />
+                  Marcar como lida
+                </a>
+                <a class="trash" href="#">
+                  <img src="assets/trash.png" alt="excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.png" alt="user" />
+                </div>
+                <div class="question">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, distinctio dolore. Quas assumenda corrupti, voluptas
+                    quasi alias praesentium, modi iusto illo vitae tempora dolor
+                    veritatis tenetur? Voluptatibus saepe obcaecati a! Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                    ducimus beatae corporis recusandae neque eligendi itaque
+                    illum doloremque? Officia vel assumenda aut! Possimus atque
+                    cupiditate vel delectus consequuntur voluptatem dolor!
+                  </p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="check" href="#">
+                  <img src="assets/check.png" alt="marcar como lida" />
+                  Marcar como lida
+                </a>
+                <a class="trash" href="#">
+                  <img src="assets/trash.png" alt="excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.png" alt="user" />
+                </div>
+                <div class="question">
+                  <p>O que é script?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="trash" href="#">
+                  <img src="assets/trash.png" alt="excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
           </div>
         </section>
-
       </main>
+    </div>
 
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Excluir pergunta</h2>
+        <p>Tem certeza que você deseja excluir essa pergunta?</p>
 
+        <form action="#">
+          <label class="sr-only" for-id="password">Digite sua senha</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Digite sua senha"
+          />
+
+          <div class="buttons">
+            <div class="button grey">Cancelar</div>
+            <button class="red">Sim, excluir</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
